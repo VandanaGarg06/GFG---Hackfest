@@ -1,0 +1,231 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333; /* Changed color for better contrast */
+    background-color: #f9f9f9;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Navbar */
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 70px; /* Adjust logo size */
+    margin-right: auto;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo stays on the left */
+.navbar .logo h1 {
+    color: white;
+    font-size: 24px;
+    margin-right: auto;
+}
+
+/* Center the Navbar Links */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-grow: 1;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #a5d6a7;
+}
+
+/* Aligning the buttons to the right */
+.auth-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.auth-buttons .login-btn,
+.auth-buttons .signup-btn {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.auth-buttons .signup-btn {
+    background-color: #2e7d32;
+}
+
+.auth-buttons .login-btn {
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.auth-buttons .signup-btn:hover,
+.auth-buttons .login-btn:hover {
+    background-color: #66bb6a;
+}
+
+/* Responsive Navbar for smaller screens */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.8);
+        top: 60px;
+        left: -100%;
+        width: 100%;
+        transition: left 0.3s;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .dropdown:hover .nav-links {
+        left: 0;
+    }
+
+    .auth-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-image: url('R.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cta-button {
+    background-color: #2e7d32;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #66bb6a;
+}
+
+.cta-button.secondary {
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.cta-button.secondary:hover {
+    background-color: rgba(111, 7, 7, 0.356);
+}
+
+/* Dropdown button */
+.dropbtn {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+/* Dropdown link hover */
+.dropdown-content a:hover {
+    background-color: rgba(166, 226, 90, 0.8);
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change color of dropdown button on hover */
+.dropdown:hover .dropbtn {
+    color: #a5d6a7;
+}

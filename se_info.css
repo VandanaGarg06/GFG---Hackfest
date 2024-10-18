@@ -1,0 +1,52 @@
+/* Services Section */
+.services-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    /* background-color: #f9f9f9; */
+    background-image: url('farm.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  .services-container {
+    max-width: 800px;
+    background-color: rgb(255, 255, 255, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .services-container h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .services-container p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .service {
+    margin-bottom: 40px;
+  }
+  
+  .service h2 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+  }
+  
+  .service p {
+    color: #555;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+  }

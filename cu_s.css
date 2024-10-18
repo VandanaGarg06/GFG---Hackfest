@@ -1,0 +1,119 @@
+/* Contact Section */
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    /* background-color: #f9f9f9; */
+    background-image: url('farm.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  .contact-container {
+    max-width: 600px;
+    background-color: rgb(255, 255, 255, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .contact-container h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .contact-container p {
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .form-group input, 
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-group input:focus, 
+  .form-group textarea:focus {
+    border-color: #4CAF50;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }
+  header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img {
+    width: 70px; /* Adjust logo size */
+    /* margin-bottom: 0px; */
+    margin-right:auto;
+}
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo stays on the left */
+.navbar .logo h1 {
+    color: white;
+    font-size: 24px;
+    margin-right: auto; /* This ensures logo stays on the left */
+}
+
+/* Center the Navbar Links */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-grow: 1; /* Make the links container grow to take available space */
+}
+
+.nav-links li {
+    margin: 0 20px; /* Space between the links */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #a5d6a7;
+}

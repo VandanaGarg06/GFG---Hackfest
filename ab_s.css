@@ -1,0 +1,163 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  /* header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  } */
+  
+  nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  nav a:hover, nav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .btn-login, .btn-signup {
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  
+  .btn-login:hover, .btn-signup:hover {
+    background-color: #45a049;
+  }
+  
+  .btn-signup.active {
+    background-color: #4CAF50;
+  }
+  
+  /* About Us Section */
+  .about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    /* background-color: #331c1c; */
+    background-image: url('farm.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  .about-container {
+    max-width: 800px;
+    background-color: rgb(255, 255, 255, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .about-container h1, .about-container h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .about-container p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .about-container ul {
+    text-align: left;
+    color: #666;
+    list-style: disc;
+    margin-bottom: 20px;
+  }
+  
+  .about-container ul li {
+    margin: 10px 0;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin: 10px 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+  }
+
+  header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img {
+    width: 70px; /* Adjust logo size */
+    /* margin-bottom: 0px; */
+    margin-right:auto;
+}
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo stays on the left */
+.navbar .logo h1 {
+    color: white;
+    font-size: 24px;
+    margin-right: auto; /* This ensures logo stays on the left */
+}
+
+/* Center the Navbar Links */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-grow: 1; /* Make the links container grow to take available space */
+}
+
+.nav-links li {
+    margin: 0 20px; /* Space between the links */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #a5d6a7;
+}
